@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DustDev — Offline-capable IDE for Rural Arizona</title>
+  <meta name="description" content="DustDev: an IDE that works online (cloud devcontainers) and offline (OPFS + WebContainers). Built for rural Arizonans who need resilient local development and AI assistance even without reliable connectivity." />
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DustDev — Offline-capable IDE" />
+  <meta property="og:description" content="Work anywhere: cloud devcontainers when online, OPFS & WebContainers when offline. AI features that run locally." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1502784444185-5b0ecf4433f8?auto=format&fit=crop&w=1200&q=60" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">dustdev</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#get-started" class="button primary">Try DustDev</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h2>An IDE that keeps working — even when the internet doesn't.</h2>
+          <p class="lead">DustDev combines cloud devcontainers when you're online with OPFS + WebContainers offline. Run code, build projects, and use local AI assistants — all without losing work in rural Arizona.</p>
+
+          <div class="cta-row">
+            <a href="#get-started" class="button primary">Get Started</a>
+            <a href="#learn-more" class="button">Learn More</a>
+          </div>
+
+          <ul class="badges">
+            <li>Online: Cloud Devcontainers</li>
+            <li>Offline: OPFS + WebContainers</li>
+            <li>AI: Runs locally when offline</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <img alt="Developer laptop in desert" src="https://images.unsplash.com/photo-1502784444185-5b0ecf4433f8?auto=format&fit=crop&w=900&q=60">
+          <figcaption>Built for remote work in Arizona and similar rural areas.</figcaption>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h3>Designed for rural communities</h3>
+      <p class="muted">DustDev helps developers, students, and local organizations stay productive where connectivity is limited.</p>
+
+      <div class="feature-grid">
+        <article>
+          <h4>Resilient development</h4>
+          <p>Seamless switching between cloud devcontainers when connected and local WebContainers + OPFS when offline so your environment never breaks.</p>
+        </article>
+        <article>
+          <h4>Local AI assistants</h4>
+          <p>AI tools that can run locally (on-device) when offline — code completion, refactors, and small models for common tasks.</p>
+        </article>
+        <article>
+          <h4>Community-first</h4>
+          <p>Resources and presets tailored to rural Arizona: low-bandwidth templates, offline learning modules, and community training guides.</p>
+        </article>
+        <article>
+          <h4>Secure and private</h4>
+          <p>Data stays in your browser when offline (OPFS), and cloud workspaces are ephemeral and encrypted when used.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="container">
+      <h3>How it works</h3>
+      <ol class="steps">
+        <li><strong>Online:</strong> Spin up cloud devcontainers — full compute in the cloud, synced to your account.</li>
+        <li><strong>Offline:</strong> DustDev uses OPFS and WebContainers to run and persist code locally inside the browser.</li>
+        <li><strong>AI anywhere:</strong> Lightweight models and inference run locally for common tasks; larger models can be used when online.</li>
+      </ol>
+
+      <div class="demo">
+        <h4>Demo: Save a file offline</h4>
+        <p>Try saving a small code snippet to your browser storage and reload to see it persist.</p>
+        <textarea id="code" placeholder="// type some code here">console.log('hello from dustdev')</textarea>
+        <div class="demo-actions">
+          <button id="saveBtn" class="button">Save Offline</button>
+          <button id="loadBtn" class="button secondary">Load</button>
+          <span id="status" class="status muted">Offline status: <strong id="online">checking…</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started" class="container cta">
+      <h3>Ready to try DustDev?</h3>
+      <p>Start now — works in a browser tab, and keeps working if the connection drops.</p>
+      <a href="#" class="button primary" id="installBtn">Install (PWA)</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with care for rural Arizona by the DustDev team. <a href="#">Learn about our rural-resilience program</a>.</p>
+      <small class="muted">© DustDev — open source</small>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
